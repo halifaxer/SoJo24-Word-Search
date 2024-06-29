@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>SoJo24 - Word Search</title>
+        <link rel="icon" href="images/favicon.ico?v1" type="image/x-icon" />
+    <script type="text/javascript">
+ 
+    window.onload = function() {
+            for (let node of document.querySelectorAll("td")) {
+        
+                node.onclick = function() {
+                    if (node.className == "wl") {
+                        node.className = "wl"
+                    } else {
+                        if (node.className == "") {
+                        node.className = "selected"
+                        } else {
+                            node.className = ""
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('images/background.png');
+            background-position-x: right;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .content {
+            max-width: 313px;
+            margin: auto;
+        
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            cursor: pointer;
+            border: 1px solid black;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        td.wl {
+            width:fit-content;
+        }
+
+        td.selected {
+            background: #BF6563;
+        }
+    </style>
+        
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body id="hidden" style="display:brick;">
+        <div class="content">
+        <h1>You know the <em>when</em>&mdash;now it's time to find the <em>where</em>.
+            </h1>
+        <p>Tap anywhere to mark a square.</p>
+        <p>
+    <table>
+        <tr><td>G</td><td>F</td><td>E</td><td>N</td><td>C</td><td>I</td><td>N</td><td>G</td><td>M</td><td>G</td><td>G</td><td>O</td></tr>
+        <tr><td>G</td><td>E</td><td>G</td><td>T</td><td>T</td><td>H</td><td>E</td><td>A</td><td>A</td><td>N</td><td>N</td><td>P</td></tr>
+        <tr><td>P</td><td>W</td><td>H</td><td>N</td><td>Y</td><td>S</td><td>R</td><td>A</td><td>T</td><td>I</td><td>I</td><td>3</td></tr>
+        <tr><td>S</td><td>W</td><td>O</td><td>B</td><td>I</td><td>A</td><td>I</td><td>R</td><td>D</td><td>W</td><td>L</td><td>S</td></tr>
+        <tr><td>/</td><td>H</td><td>G</td><td>G</td><td>T</td><td>V</td><td>/</td><td>N</td><td>R</td><td>O</td><td>C</td><td>/</td></tr>
+        <tr><td>P</td><td>U</td><td>O</td><td>H</td><td>A</td><td>B</td><td>I</td><td>E</td><td>N</td><td>R</td><td>Y</td><td>U</td></tr>
+        <tr><td>R</td><td>L</td><td>O</td><td>O</td><td>O</td><td>R</td><td>C</td><td>D</td><td>S</td><td>E</td><td>C</td><td>H</td></tr>
+        <tr><td>F</td><td>N</td><td>.</td><td>X</td><td>T</td><td>C</td><td>C</td><td>G</td><td>O</td><td>L</td><td>T</td><td>J</td></tr>
+        <tr><td>D</td><td>.</td><td>I</td><td>S</td><td>O</td><td>I</td><td>P</td><td>H</td><td>E</td><td>E</td><td>U</td><td>C</td></tr>
+        <tr><td>H</td><td>N</td><td>S</td><td>S</td><td>E</td><td>E</td><td>N</td><td>Y</td><td>E</td><td>D</td><td>O</td><td>U</td></tr>
+        <tr><td>G</td><td>S</td><td>U</td><td>R</td><td>F</td><td>I</td><td>N</td><td>G</td><td>O</td><td>R</td><td>T</td><td>H</td></tr>
+        <tr><td>E</td><td>G</td><td>N</td><td>I</td><td>L</td><td>I</td><td>A</td><td>S</td><td>R</td><td>E</td><td>Y</td><td>!</td></tr>
+    </table>
+</p>
+<p>    
+    <table style="width:100%">
+        <tr><td>Archery</td><td>Golf</td><td>Sailing</td></tr>
+        <tr><td>Boxing</td><td>Judo</td><td>Shooting</td></tr>
+        <tr><td>Cycling</td><td>Marathon</td><td>Soccer</td></tr>
+        <tr><td>Diving</td><td>Rowing</td><td>Surfing</td></tr>
+        <tr><td>Fencing</td><td>Rugby</td><td>Tennis</td></tr>
+    </table>
+</p>
+<!-- Old JS trigger, now on index.html
+        <script type="text/javascript">
+    var answer = prompt("Maybe Daft Punk will come out of retirement for a new motto reveal concert, but what does the original latin mean? Spaces, no commas.");
+    if (answer.toLowerCase() == "faster higher stronger") {
+      hidden.style.display = "block";
+    } else {
+        location.reload()
+    }
+  </script>
+-->
+    </div>
+</body>
+</html>
