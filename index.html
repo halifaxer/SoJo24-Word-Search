@@ -22,18 +22,89 @@
         }
     </script>
     <style>
+        <link rel="icon" href="images/favicon.svg?v1" type="image/x-icon" />
+    <style>
+
+        @font-face {
+            font-family: LogoFont;
+            src: url(Shrikhand-Regular.ttf);
+        }        
+
+        @font-face {
+            font-family: Lora;
+            src: url(Lora-Regular.ttf);
+        }
+
         body {
-            background-image: url('images/background.png');
-            background-position-x: right;
-            background-position-y: top;
+            background-image: url('images/background.svg');
+            background-position-x: center;
+            background-position-y: bottom;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: cover;
+            
+        }
+
+        .logo {
+            font-family: LogoFont;
+            text-align: center;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        h1 {
+            font-family: LogoFont;
+        }
+
+        p {
+            font-family: Lora;
         }
 
         .content {
-            max-width: 313px;
+            max-width: 400px;
             margin: auto;
+        }
+
+        .wrapper {
+            box-sizing: border-box;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .wrapper .row {
+            font-size: 0px;
+            text-align: center;
+        }
+
+        .wrapper .row * {
+            font-size: 14px;
+        }
+
+        .wrapper .row:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        .wrapper .icon {
+            display: inline-block;
+            height: 12%;
+            margin: 1%;
+            width: 12%;
+        }
+
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+        }
+
+        img.trans {
+            opacity: 0.3;
+        }
         
         table {
             border-collapse: collapse;
@@ -53,15 +124,17 @@
         }
 
         td.selected {
-            background: #BF6563;
+            background: #F4C300;
         }
     </style>
         
     </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <body id="hidden" style="display:brick;">
+    <body>
         <div class="content">
-        <h1>You know the <em>when</em>&mdash;now it's time to find the <em>where</em>.
+        <div class="logo">SOJO24</div>
+        <img class="center" src="images/Olympic_Rings.svg">
+            <h1>You know the <em>when</em>&mdash;now it's time to find the <em>where</em>.
             </h1>
         <p>Tap anywhere to mark a square.</p>
         <p>
@@ -88,7 +161,19 @@
         <tr><td>Diving</td><td>Rowing</td><td>Surfing</td></tr>
         <tr><td>Fencing</td><td>Rugby</td><td>Tennis</td></tr>
     </table>
-</p>
+    </p>
+    <div class="wrapper">
+        <div class="row">
+            <div class="icon"><img src="images/MPN_small.svg"></div>
+            <div class="icon"><img class="trans" src="images/ATH_small.svg"></div>
+            <div class="icon"><img class="trans" src="images/ATH_small.svg"></div>
+            <div class="icon"><img class="trans" src="images/BOX_small.svg"></div>
+            <div class="icon"><img class="trans" src="images/ARC_small.svg"></div>
+            <div class="icon"><img class="trans" src="images/FEN_small.svg"></div>
+            <div class="icon"><img class="trans" src="images/CLB_small.svg"></div>
+        </div>
+        </div>
+
 <!-- Old JS trigger, now on index.html
         <script type="text/javascript">
     var answer = prompt("Maybe Daft Punk will come out of retirement for a new motto reveal concert, but what does the original latin mean? Spaces, no commas.");
