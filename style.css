@@ -33,14 +33,17 @@ p {
 }
 
 .content {
-    max-width: 400px;
+    max-width: 313px;
     margin: auto;
 }
 
 .wrapper {
     box-sizing: border-box;
     padding: 5px;
-    width: 100%;
+    width: 313px;
+    max-height: 56px;
+    border-radius: 25px;
+    background: #FFFFFF;
 }
 
 .wrapper .row {
