@@ -19,7 +19,7 @@ body {
     
 }
 
-.logo {
+/*.logo {
     font-family: LogoFont;
     text-align: center;
     font-weight: bolder;
@@ -28,9 +28,9 @@ body {
 
 h1 {
     font-family: LogoFont;
-}
+}*/
 
-p {
+* {
     font-family: Lora;
 }
 
