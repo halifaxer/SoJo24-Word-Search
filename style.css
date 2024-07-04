@@ -46,7 +46,7 @@ h1 {
     max-height: 56px;
     border-radius: 25px;
     background: #FFFFFF;
-    border: #000000;
+    border: 1px solid #000000;
 }
 
 .wrapper .row {
