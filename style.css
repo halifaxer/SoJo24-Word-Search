@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('images/background.svg');
+    background-image: url('images/background.svg?v1');
     background-position-x: center;
     background-position-y: bottom;
     background-repeat: no-repeat;
